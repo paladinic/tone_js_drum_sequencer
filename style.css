@@ -24,6 +24,7 @@ body {
 .header{
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .header img{
@@ -97,13 +98,14 @@ body {
 .slidecontainer {
   width: 100%;
   display: flex;
-  padding: 30px 0;
+  padding: 10px 0;
   color: var(--red);
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
+  margin: auto 0;
   height: 25px;
   background: var(--dark);
   outline: none;
@@ -136,6 +138,11 @@ body {
   transition: .2s;
 }
 
+.slidecontainer label{
+  width: 120px;
+  margin: auto 0;
+}
+
 .button {
   font-family: 'Courier Prime', monospace;
   border: 4px inset var(--bright);
@@ -144,12 +151,9 @@ body {
   letter-spacing: 3px;
 	cursor: pointer;
 	display: block;
-	font-size: 2.2rem;
 	margin: 5px;
-	min-width: 200px;
-	padding: 10px;
 	text-transform: uppercase;
-	width: 200px;
+	width: 150px;
   background-color: var(--bright);
   transition: .2s;
   font-weight: 700;
