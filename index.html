@@ -20,13 +20,17 @@
         <h1>BEETBOX</h1>
     </div>
     <div id="sequencer"></div>
-    <button class="button" id="play-button">PLAY</button>
-    <div class="slidecontainer">
-        <label for="bpm-slider">BPM: <span id="bpm-value">120</span></label>
-        <input type="range" class="bpm-slider slider" id="bpm-slider" min="40" max="360" value="120" step="1">
+    <div class="sequencer_controls">
+        <button class="button" id="play-button">PLAY</button>
+        <div class="slidecontainer">
+            <label for="bpm-slider">BPM: <span id="bpm-value">120</span></label>
+            <input type="range" class="bpm-slider slider" id="bpm-slider" min="40" max="360" value="120" step="1">
+        </div>
     </div>
 
 
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.js"></script>
     <script src="script.js"> </script>
 </body>

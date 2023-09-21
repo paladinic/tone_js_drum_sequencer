@@ -12,31 +12,38 @@ body {
   font-family: 'Courier Prime', monospace;
   background-color: var(--black);
   color: var(--red);
-  padding: 5% 10%;
   font-weight: 700;
   text-shadow: 0px 0px 10px var(--red);
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header{
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .header img{
   width: 25px;
   height: 25px;
-  margin:  auto  20px auto 5px;
+}
+
+.header h1{
+  margin:0;
+  font-size: 25px;
 }
 
 .sequencer-row {
   display: flex;
-  margin-bottom: 10px;
+  margin: 2px;
 }
 
 .note {
   width: 100%;
-  height: 100px;
+  height: 50px;
   margin-right: 5px;
   background-color: var(--dark);
   border: 4px inset var(--dark);
@@ -59,7 +66,7 @@ body {
   text-align: right;
   margin-right: 15px; /* adjust as needed */
   vertical-align: middle;
-  line-height: 100px; /* to vertically center the text with the note row */
+  line-height: 50px; /* to vertically center the text with the note row */
 }
 
 
@@ -77,6 +84,10 @@ body {
 .beat-indicator-is-active {
   background-color: var(--red);
   box-shadow: 0px 0px 20px var(--red);
+}
+
+.sequencer_controls{
+  display: flex;
 }
 
 .bpm-slider {
@@ -134,11 +145,11 @@ body {
 	cursor: pointer;
 	display: block;
 	font-size: 2.2rem;
-	margin: auto;
+	margin: 5px;
 	min-width: 200px;
-	padding: .5rem;
+	padding: 10px;
 	text-transform: uppercase;
-	width: auto;
+	width: 200px;
   background-color: var(--bright);
   transition: .2s;
   font-weight: 700;
